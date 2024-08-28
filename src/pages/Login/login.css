@@ -1,0 +1,140 @@
+.login {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.login__logo {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin-left: var(--normal-indent);
+    user-select: none;
+}
+
+.login__logo__link {
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.login__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login__form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 325px;
+    padding: var(--normal-indent);
+}
+
+.login__form-container__headline {
+    margin-top: var(--normal-indent);
+    margin-bottom: var(--normal-indent);
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 0rem 1rem 0.5rem;
+    font-size: var(--primary-indent);
+    border: none;
+    background-color: #ffffff;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 0.5rem;
+}
+
+.form-input:focus {
+    border: var(--input-border);
+    outline: none;
+}
+
+.form-input:focus::placeholder {
+    color: transparent;
+}
+
+.form-input::placeholder {
+    color: var(--placeholder-color);
+    padding-left: var(--small-indent);
+}
+
+.form-button {
+    width: 100%;
+    font-size: var(--primary-indent);
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: url(../../images/screw-driver.png), auto;
+    background-color: black;
+    color: white;
+    margin-top: var(--small-indent);
+}
+
+.form-button:hover {
+    background-color: var(--button-hovor-color);
+}
+
+.login__form-container__questions {
+    margin-top: var(--large-indent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-indent);
+}
+
+.login__form-container__headline {
+    user-select: none;
+}
+
+.login__form-container__questions a {
+    color: black;
+}
+
+.login-image {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 725px) {
+    .login-image {
+        display: block;
+        height: 800px;
+        width: 800px;
+        position: fixed;
+        left: -400px;
+        bottom: -60px;
+    }
+
+    .bob {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: translateY(0);
+        animation: jump 2s ease infinite forwards;
+        z-index: 0;
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+        }
+        25% {
+            bottom: 40px;
+        }
+        30% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 0;
+        }
+    }
+}

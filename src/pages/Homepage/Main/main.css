@@ -1,0 +1,31 @@
+.main {
+    height: fit-content;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.main-button {
+    margin-top: var(--large-indent);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: var(--extra-font);
+    }
+    .main-content p {
+        font-size: var(--large-font);
+    }
+}

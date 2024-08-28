@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* Colors */
+    --primary-color: #edae49;
+    --secondary-color: #fae8eb;
+    --text-color: rgb(19, 19, 19);
+    --navbar-bg-color: #23ce6b;
+    --error-message: rgba(255, 0, 0, 0.801);
+    --carousel-background: rgba(0, 0, 0, 0.774);
+    --placeholder-color: rgb(41, 41, 41);
+
+    /* Indent */
+    --small-indent: 0.5rem;
+    --normal-indent: 1rem;
+    --medium-indent: 1.5rem;
+    --large-indent: 2rem;
+
+    /* Sizes */
+    font-size: 16px;
+    font-family: "Cairo Play", sans-serif;
+
+    --small-font: 0.5rem;
+    --normal-font: 1rem;
+    --medium-font: 1.5rem;
+    --large-font: 2rem;
+    --extra-font: 4rem;
+
+    /* Form  */
+    --input-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.315);
+    --input-border: 2px solid rgba(0, 0, 0, 0.075);
+    --button-hovor-color: rgba(0, 0, 0, 0.842);
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}

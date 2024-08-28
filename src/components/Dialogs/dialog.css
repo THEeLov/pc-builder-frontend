@@ -1,0 +1,26 @@
+.dialog__close-button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.dialog-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: var(--normal-indent);
+}
+
+.dialog-form__grid--first {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-indent);
+}
+.dialog-form__grid--second {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-indent);
+}

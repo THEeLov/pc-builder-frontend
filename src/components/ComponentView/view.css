@@ -1,0 +1,26 @@
+.component-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-view__image-container {
+    height: 200px;
+    width: 200px;
+}
+
+.component-view__image {
+    width: 100%;
+    height: 100%;
+}
+
+.component-view__info-container {
+    display: flex;
+    gap: var(--normal-indent);
+    flex-wrap: wrap;
+}

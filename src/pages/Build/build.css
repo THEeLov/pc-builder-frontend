@@ -1,0 +1,71 @@
+.build__headline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    user-select: none;
+    background-color: var(--primary-color);
+}
+
+.build__components-container {
+    background-color: var(--secondary-color);
+    padding: var(--large-indent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-indent);
+}
+
+.build__components {
+    display: flex;
+    flex-direction: column;
+}
+
+.build__component {
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.418);
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-indent);
+}
+
+.build__component:first-child {
+    border-top: none;
+}
+
+.build__amount {
+    font-size: var(--medium-font);
+    display: flex;
+    justify-content: center;
+}
+
+.component__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.component__info > * {
+    flex: 1;
+    padding: var(--small-indent);
+}
+
+.component__info__button {
+    display: flex;
+    justify-content: end;
+}
+
+.component__info__price {
+    display: flex;
+    justify-content: center;
+}
+
+.component__info__image-container {
+    height: 100px;
+    width: 100px;
+}
+
+.component__info__image {
+    width: 100%;
+    height: 100%;
+}

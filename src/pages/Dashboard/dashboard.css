@@ -1,0 +1,27 @@
+.dashboard {
+    background-color: var(--secondary-color);
+    padding: var(--normal-indent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-indent);
+}
+
+.dashboard__component-selectors {
+    display: flex;
+    gap: var(--medium-indent);
+    flex-wrap: wrap;
+}
+
+.dashboard__component-selectors > div {
+    flex: 1;
+}
+
+.dashboard__component-selectors > div > * {
+    width: 100%;
+}
+
+.dashboard-components {
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-indent);
+}

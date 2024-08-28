@@ -1,0 +1,174 @@
+.register {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.register-image {
+    display: none;
+}
+
+.register__logo {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin-left: var(--normal-indent);
+    user-select: none;
+}
+
+.register__logo__link {
+    color: black;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.register__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register__form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 325px;
+    padding: var(--normal-indent);
+}
+
+.register__form-container__headline {
+    margin-top: var(--normal-indent);
+    margin-bottom: var(--normal-indent);
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 0rem 1rem 0.5rem;
+    font-size: var(--primary-indent);
+    border: none;
+    background-color: #ffffff;
+    box-shadow: var(--input-box-shadow);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.form-input:focus {
+    border: var(--input-border);
+    outline: none;
+}
+
+.form-input:focus::placeholder {
+    color: transparent;
+}
+
+.form-input::placeholder {
+    color: var(--placeholder-color);
+    padding-left: var(--small-indent);
+}
+
+.form-button {
+    width: 100%;
+    font-size: var(--primary-indent);
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: url(../../images/screw-driver.png), auto;
+    background-color: black;
+    color: white;
+}
+
+.form-button:hover {
+    background-color: var(--button-hovor-color);
+}
+
+.register__form-container__questions {
+    margin-top: var(--large-indent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-indent);
+}
+
+.register__form-container__questions a {
+    color: black;
+}
+
+.register__form-container__headline {
+    user-select: none;
+}
+
+.error-message {
+    color: var(--error-message);
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 700px) {
+    .register-image {
+        display: block;
+        height: 850px;
+        width: 850px;
+        position: fixed;
+        bottom: -150px;
+        left: -1100px;
+        transform: rotate(0);
+    }
+
+    .register-bob {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: rotateAnimation 35s ease infinite forwards;
+        z-index: -1;
+    }
+
+    /* Dont get scared when you see this, let the animation play so you know what it does */
+    @keyframes rotateAnimation {
+        0% {
+            transform: rotate(0deg) translateX(0);
+        }
+        2.5% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        12.5% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        25% {
+            transform: rotate(0deg) translateX(0);
+        }
+        27.5% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        30% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        50% {
+            transform: rotate(0deg) translateX(0);
+        }
+        52.5% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        65% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        75% {
+            transform: rotate(0deg) translateX(0);
+        }
+        77.5% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        80% {
+            transform: rotate(25deg) translateX(325px) translateY(-200px);
+        }
+        90% {
+            transform: rotate(180deg) translateX(2000px) translateY(-4000px);
+        }
+        100% {
+            transform: rotate(180deg) translateX(0);
+        }
+    }
+}
