@@ -90,6 +90,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--small-indent);
+    z-index: 2;
 }
 
 .login__form-container__headline {
@@ -120,7 +121,7 @@
         position: absolute;
         transform: translateY(0);
         animation: jump 2s ease infinite forwards;
-        z-index: 0;
+        z-index: -2;
     }
 
     @keyframes jump {
