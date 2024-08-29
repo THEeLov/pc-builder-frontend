@@ -1,5 +1,5 @@
 import "./navbar.css"
-import SignIn from "../../images/sing_in.svg"
+import SignIn from "../../images/sign_in.svg"
 import CustomButton from "../CustomButton/CustomButton"
 import { Link } from "react-router-dom"
 import useAuthData from "../../hooks/useAuthData"

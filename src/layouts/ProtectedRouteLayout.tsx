@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from "react-router-dom"
 import useAuthData from "../hooks/useAuthData"
-import { showLoginNotification } from "@/utils/showNotfication"
+import { showLoginNotification } from "../utils/showNotfication"
 
 const ProtectedRouteLayout = ({ admin }: { admin: boolean }) => {
     const { user } = useAuthData()

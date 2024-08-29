@@ -22,7 +22,7 @@ const DashboardTable2 = ({
     params: string
     name2: string | null
 }) => {
-    const { isDialogOpen, openDialog } = useDialog()
+    const { isDialogOpen } = useDialog()
 
     const { data, isLoading } = useComponents((name2 as ComponentTypes) || "", params)
 

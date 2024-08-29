@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons"
 import "./optionspage.css"
 import { useNavigate } from "react-router-dom"
-import { usePartialConfigCreate, usePartialConfigDelete } from "@/hooks/usePartialConfig"
+import { usePartialConfigCreate, usePartialConfigDelete } from "../../hooks/usePartialConfig"
 import useAuthData from "../../hooks/useAuthData"
 
 const cardData = [

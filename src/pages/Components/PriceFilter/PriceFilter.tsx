@@ -1,14 +1,14 @@
 import { Slider } from "antd"
 import { useSearchParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "./pricefilter.css"
-import { useComponents } from "@/hooks/useComponents"
-import { ComponentTypes } from "@/models/components"
+import { useComponents } from "../../../hooks/useComponents"
+import { ComponentTypes } from "../../../models/components"
 
 const PriceFilter = ({ name }: { name: ComponentTypes }) => {
     const [searchParam, setSearchParams] = useSearchParams()
 
-    const { data, isLoading } = useComponents(name, "")
+    const { data } = useComponents(name, "")
 
     const maxPrice = data ? Math.ceil(Math.max(...data.map((component) => component.component.price))) : 1000
 
