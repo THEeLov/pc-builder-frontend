@@ -105,7 +105,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 1024px) and (min-height: 725px) {
+@media only screen and (min-width: 1450px) and (min-height: 725px) {
     .login-image {
         display: block;
         height: 800px;
