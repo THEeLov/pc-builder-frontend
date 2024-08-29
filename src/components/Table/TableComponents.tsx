@@ -1,14 +1,14 @@
 import type { TableColumnsType } from "antd"
 import { Table } from "antd"
 import { useSearch } from "../../hooks/useSearch"
-import { useComponent } from "@/hooks/useComponents"
+import { useComponent } from "../../hooks/useComponents"
 import { Component, ComponentTypes } from "../../models/components"
 import { useState } from "react"
 import ComponentView from "../ComponentView/ComponentView"
 import TableActions from "./TableActions"
 import "./table.css"
-import useAuthData from "@/hooks/useAuthData"
-import ComponentsTableActions from "@/components/Table/ComponentsTableActions"
+import useAuthData from "../../hooks/useAuthData"
+import ComponentsTableActions from "../../components/Table/ComponentsTableActions"
 
 type DataIndex = keyof Component["component"]
 

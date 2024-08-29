@@ -1,8 +1,8 @@
 import React from "react"
 import { FaEye } from "react-icons/fa"
-import { Component } from "@/models/components"
+import { Component } from "../../models/components"
 import CustomButton from "../CustomButton/CustomButton"
-import { showLoginNotification } from "@/utils/showNotfication"
+import { showLoginNotification } from "../../utils/showNotfication"
 
 interface TableActionsProps {
     record: Component

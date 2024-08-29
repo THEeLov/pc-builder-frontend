@@ -3,5 +3,24 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["vite/client", "vitest"],
+    "baseUrl": "./",
+    "paths": {
+        "@/*": ["src/*"],
+        "@/hooks/*": ["src/hooks/*"],
+        "@/data/*": ["src/data/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/client.d.ts" // Include your declaration file
+  ],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }

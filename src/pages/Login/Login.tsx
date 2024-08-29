@@ -5,9 +5,9 @@ import Bob from "../../images/sign_up_bob.png"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { loginSchema } from "../../validationSchemas/auth"
 import { Link, useNavigate } from "react-router-dom"
-import { useLogin } from "@/hooks/useAuth"
+import { useLogin } from "../../hooks/useAuth"
 import useAuthData from "../../hooks/useAuthData"
-import FormField from "@/components/Form/FormField"
+import FormField from "../../components/Form/FormField"
 
 type FormFields = z.infer<typeof loginSchema>
 

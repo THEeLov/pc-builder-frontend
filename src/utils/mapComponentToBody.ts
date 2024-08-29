@@ -1,5 +1,5 @@
 import { Component } from "../models/components"
-import { PartialConfigEdit } from "@/models/configuration"
+import { PartialConfigEdit } from "../models/configuration"
 
 export function mapComponentToBody(name: string, record: Component, deleteValue: boolean): PartialConfigEdit {
     let body: PartialConfigEdit

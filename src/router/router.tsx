@@ -7,9 +7,9 @@ import Register from "../pages/Register/Register"
 import Components from "../pages/Components/Components"
 import OptionsPage from "../pages/Options/OptionsPage"
 import ProtectedRouteLayout from "../layouts/ProtectedRouteLayout"
-import Dashboard from "@/pages/Dashboard/Dashboard"
-import { DialogProvider } from "@/providers/DialogProvider"
-import ErrorsNotFound from "@/pages/Errors/NotFound"
+import Dashboard from "../pages/Dashboard/Dashboard"
+import { DialogProvider } from "../providers/DialogProvider"
+import ErrorsNotFound from "../pages/Errors/NotFound"
 
 export const router = createBrowserRouter([
     {

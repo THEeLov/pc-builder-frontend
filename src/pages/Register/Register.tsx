@@ -3,11 +3,11 @@ import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { registerSchema } from "../../validationSchemas/auth"
 import { Link, useNavigate } from "react-router-dom"
-import { useRegister } from "@/hooks/useAuth"
+import { useRegister } from "../../hooks/useAuth"
 import useAuthData from "../../hooks/useAuthData"
 import Bob from "../../images/sign_UP_bob.png"
 import "./register.css"
-import FormField from "@/components/Form/FormField"
+import FormField from "../../components/Form/FormField"
 
 type FormFields = z.infer<typeof registerSchema>
 

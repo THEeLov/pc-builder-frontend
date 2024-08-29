@@ -1,6 +1,6 @@
-import CustomButton from "@/components/CustomButton/CustomButton"
+import CustomButton from "../../components/CustomButton/CustomButton"
 import { useState } from "react"
-import { ComponentTypes } from "@/models/components"
+import { ComponentTypes } from "../../models/components"
 import DashboardTable from "./DashboardTable"
 import "./dashboard.css"
 

@@ -1,10 +1,9 @@
 import PriceFilter from "./PriceFilter/PriceFilter"
-import { ComponentTypes } from "@/models/components"
+import { ComponentTypes } from "../../models/components"
 import { useSearchParams } from "react-router-dom"
 import "./components.css"
 import { useState } from "react"
-import DashboardTable from "../Dashboard/DashboardTable"
-import CustomButton from "@/components/CustomButton/CustomButton"
+import CustomButton from "../../components/CustomButton/CustomButton"
 import DashboardTable2 from "../Dashboard/DashboardTable2"
 
 const components = ["Motherboards", "Processors", "Rams", "GPUs", "Storages", "Power-Supplies", "Pc-Cases"]

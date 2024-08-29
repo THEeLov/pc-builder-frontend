@@ -1,9 +1,9 @@
-import CustomButton from "@/components/CustomButton/CustomButton"
-import { Component } from "@/models/components"
+import CustomButton from "../../components/CustomButton/CustomButton"
+import { Component } from "../../models/components"
 import { MdDelete } from "react-icons/md"
 import useAuthData from "../../hooks/useAuthData"
-import { usePartialConfigEdit } from "@/hooks/usePartialConfig"
-import { mapComponentToBody } from "@/utils/mapComponentToBody"
+import { usePartialConfigEdit } from "../../hooks/usePartialConfig"
+import { mapComponentToBody } from "../../utils/mapComponentToBody"
 import "./build.css"
 
 const ComponentInfo = ({ componentInfo, name }: { componentInfo: Component; name: string }) => {
