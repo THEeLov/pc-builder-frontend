@@ -20,11 +20,12 @@
 .carousel-container {
     width: 300px;
     height: 250px;
-    background-color: var(--carousel-background);
+    background-color: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: var(--normal-indent);
+    border: 1px solid rgba(0, 0, 0, 0.582);
 }
 
 .image-container {
