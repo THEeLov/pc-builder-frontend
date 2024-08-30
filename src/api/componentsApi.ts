@@ -2,7 +2,7 @@ import axios from "axios"
 import { Component, ComponentTypes } from "../models/components"
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000/components",
+    baseURL: "https://pc-builder-backend-rho.vercel.app/components",
 })
 
 async function getSingle(name: ComponentTypes, componentId: string): Promise<Component> {

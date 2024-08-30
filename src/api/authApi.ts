@@ -2,7 +2,7 @@ import axios from "axios"
 import { RegisterUser, User, LoginUser } from "../models/auth"
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000/users/",
+    baseURL: "https://pc-builder-backend-rho.vercel.app//users/",
 })
 
 async function registerUser(data: RegisterUser): Promise<User> {

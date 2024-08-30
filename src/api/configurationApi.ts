@@ -2,7 +2,7 @@ import axios from "axios"
 import { PartialConfig, PartialConfigCreate, PartialConfigEdit } from "../models/configuration"
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000/configurations/partial",
+    baseURL: "https://pc-builder-backend-rho.vercel.app/configurations/partial",
 })
 
 async function getConfig(userId: string): Promise<PartialConfig> {
