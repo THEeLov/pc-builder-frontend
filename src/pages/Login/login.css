@@ -53,6 +53,7 @@
     background-color: #ffffff;
     box-shadow: var(--input-box-shadow);
     border-radius: 0.5rem;
+    box-sizing: border-box;
 }
 
 .form-input:focus {
